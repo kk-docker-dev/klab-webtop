@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Enable VNC clipboard
+vncconfig -iconic &
+
+# Set X window background
+xsetroot -solid grey
+
+# Run Gnome desktop
+metacity &
+xfdesktop &
+gnome-panel &
+gnome-session &
